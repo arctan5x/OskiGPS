@@ -60,3 +60,10 @@ p {
 	color: white;
 	font-size: auto;
 }
+
+@media only screen and (max-device-width: 480px) {
+	#map-canvas {
+		width: 250px;
+		height: 3000px;
+	}
+}
