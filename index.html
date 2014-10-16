@@ -1,119 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>OSKI MAP</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+        <title>OSKI MAP</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script>
-      var directionsDisplay;
-      var directionsService = new google.maps.DirectionsService();
-      var map;
+        <!-- Google map api -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script>
+            var directionsDisplay;
+            var directionsService = new google.maps.DirectionsService();
+            var map;
 
-      function initialize() {
-        directionsDisplay = new google.maps.DirectionsRenderer();
-        var mapOptions = {
-          zoom:16,
-          center: new google.maps.LatLng(37.872, -122.26),
-          mapTypeId: google.maps.MapTypeId.HYBRID
-        };
-        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        directionsDisplay.setMap(map);
-        }
+            function initialize() {
+                directionsDisplay = new google.maps.DirectionsRenderer();
+                var mapOptions = {
+                    zoom:16,
+                    center: new google.maps.LatLng(37.872, -122.26),
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                directionsDisplay.setMap(map);
+            }
 
-      function calcRoute() {
-        var start = document.getElementById('start').value;
-        var end = document.getElementById('end').value;
-        var request = {
-            origin:start,
-            destination:end,
-            travelMode: google.maps.TravelMode.WALKING
-        };
-        directionsService.route(request, function(response, status) {
-          if (status == google.maps.DirectionsStatus.OK) {
-            directionsDisplay.setDirections(response);
-          }
-        });
-      }
+            function calcRoute() {
+                var start = document.getElementById('start').value;
+                var end = document.getElementById('end').value;
+                var request = {
+                    origin:start,
+                    destination:end,
+                    travelMode: google.maps.TravelMode.WALKING
+                };
+                directionsService.route(request, function(response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setDirections(response);
+                }
+                });
+            }
 
-      google.maps.event.addDomListener(window, 'load', initialize);
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
 
-    </script>
-  </head>
-  <body>
+    </head>
+    <body>
 
-  <h1>OSKI MAP</h1>
+        <h1>OSKI MAP</h1>
 
-    <div id="panel">
-    <b>Start: </b>
-    <select id="start" onchange="calcRoute();">
-      <option value="">Choose Location</option>
-      <option value="Alumni House Berkeley">Alumni House</option>
-      <option value="Andersen Auditorium (Haas School of Business)">Andersen Auditorium (Haas School of Business)</option>
-      <option value="Anthony Hall Berkeley">Anthony Hall</option>
-      <option value="Architects and Engineers Berkeley">Architects and Engineers</option>
-      <option value="2160 Shattuck Ave Berkeley">Bart Station</option>
-      <option value="Bechtel Engineering Center Berkeley">Bechtel Engineering Center</option>
-      <option value="Berkeley Art Museum">Berkeley Art Museum</option>
-      <option value="Birge Hall Berkeley">Birge Hall</option>
-      <option value="Blum Hall Berkeley">Blum Hall</option>
-      <option value="Boalt Hall Berkeley">Boalt Hall</option>
-      <option value="Botanical Garden Berkeley">Botanical Garden</option>
-      <option value="Brain Imaging Center Berkeley">Brain Imaging Center</option>
-      <option value="California Hall Berkeley">California Hall</option>
-      <option value="California Memorial Stadium Berkeley">California Memorial Stadium</option>
-      <option value="Calvin Laboratory Berkeley">Calvin Laboratory</option>
-      <option value="Sather Tower Berkeley">Campanile (Sather Tower)</option>
-      <option value="Campbell Hall Berkeley">Campbell Hall</option>
-      <option value="Career Center Berkeley">Career Center</option>
-      <option value="Valley Life Science Building Berkeley">Chan Shun Auditorium (Valley Life Sciences Bldg)</option>
-      <option value="Cheit Hall Berkeley">Cheit Hall</option>
-      <option value="Clark Kerr Campus Berkeley">Clark Kerr Campus</option>
-      <option value="Class of 1914 Fountain Berkeley">Class of 1914 Fountain</option>
-      <option value="Cory Hall Berkeley">Cory Hall</option>
-      <option value="Davis Hall Berkeley">Davis Hall</option>
-      <option value="Doe Memorial Library Berkeley">Doe Memorial Library</option>
-    </select>
+        <div id="location_menu">
+            <b>Start: </b>
+            <select id="start" onchange="calcRoute();">
+                <option value="">Choose Location</option>
+                <option value="Alumni House Berkeley">Alumni House</option>
+                <option value="Andersen Auditorium (Haas School of Business)">Andersen Auditorium (Haas School of Business)</option>
+                <option value="Anthony Hall Berkeley">Anthony Hall</option>
+                <option value="Architects and Engineers Berkeley">Architects and Engineers</option>
+                <option value="2160 Shattuck Ave Berkeley">Bart Station</option>
+                <option value="Bechtel Engineering Center Berkeley">Bechtel Engineering Center</option>
+                <option value="Berkeley Art Museum">Berkeley Art Museum</option>
+                <option value="Birge Hall Berkeley">Birge Hall</option>
+                <option value="Blum Hall Berkeley">Blum Hall</option>
+                <option value="Boalt Hall Berkeley">Boalt Hall</option>
+                <option value="Botanical Garden Berkeley">Botanical Garden</option>
+                <option value="Brain Imaging Center Berkeley">Brain Imaging Center</option>
+                <option value="California Hall Berkeley">California Hall</option>
+                <option value="California Memorial Stadium Berkeley">California Memorial Stadium</option>
+                <option value="Calvin Laboratory Berkeley">Calvin Laboratory</option>
+                <option value="Sather Tower Berkeley">Campanile (Sather Tower)</option>
+                <option value="Campbell Hall Berkeley">Campbell Hall</option>
+                <option value="Career Center Berkeley">Career Center</option>
+                <option value="Valley Life Science Building Berkeley">Chan Shun Auditorium (Valley Life Sciences Bldg)</option>
+                <option value="Cheit Hall Berkeley">Cheit Hall</option>
+                <option value="Clark Kerr Campus Berkeley">Clark Kerr Campus</option>
+                <option value="Class of 1914 Fountain Berkeley">Class of 1914 Fountain</option>
+                <option value="Cory Hall Berkeley">Cory Hall</option>
+                <option value="Davis Hall Berkeley">Davis Hall</option>
+                <option value="Doe Memorial Library Berkeley">Doe Memorial Library</option>
+            </select>
 
-    <b>End: </b>
-    <select id="end" onchange="calcRoute();">
-      <option value="">Choose Location</option>
-      <option value="Alumni House Berkeley">Alumni House</option>
-      <option value="Andersen Auditorium (Haas School of Business)">Andersen Auditorium (Haas School of Business)</option>
-      <option value="Anthony Hall Berkeley">Anthony Hall</option>
-      <option value="Architects and Engineers Berkeley">Architects and Engineers</option>
-      <option value="2160 Shattuck Ave Berkeley">Bart Station</option>
-      <option value="Bechtel Engineering Center Berkeley">Bechtel Engineering Center</option>
-      <option value="Berkeley Art Museum">Berkeley Art Museum</option>
-      <option value="Birge Hall Berkeley">Birge Hall</option>
-      <option value="Blum Hall Berkeley">Blum Hall</option>
-      <option value="Boalt Hall Berkeley">Boalt Hall</option>
-      <option value="Botanical Garden Berkeley">Botanical Garden</option>
-      <option value="Brain Imaging Center Berkeley">Brain Imaging Center</option>
-      <option value="California Hall Berkeley">California Hall</option>
-      <option value="California Memorial Stadium Berkeley">California Memorial Stadium</option>
-      <option value="Calvin Laboratory Berkeley">Calvin Laboratory</option>
-      <option value="Sather Tower Berkeley">Campanile (Sather Tower)</option>
-      <option value="Campbell Hall Berkeley">Campbell Hall</option>
-      <option value="Career Center Berkeley">Career Center</option>
-      <option value="Valley Life Science Building Berkeley">Chan Shun Auditorium (Valley Life Sciences Bldg)</option>
-      <option value="Cheit Hall Berkeley">Cheit Hall</option>
-      <option value="Clark Kerr Campus Berkeley">Clark Kerr Campus</option>
-      <option value="Class of 1914 Fountain Berkeley">Class of 1914 Fountain</option>
-      <option value="Cory Hall Berkeley">Cory Hall</option>
-      <option value="Davis Hall Berkeley">Davis Hall</option>
-      <option value="Doe Memorial Library Berkeley">Doe Memorial Library</option>
-    </select>
-    </div>
-    <div id="map-canvas"></div>
+            <b>End: </b>
+            <select id="end" onchange="calcRoute();">
+                <option value="">Choose Location</option>
+                <option value="Alumni House Berkeley">Alumni House</option>
+                <option value="Andersen Auditorium (Haas School of Business)">Andersen Auditorium (Haas School of Business)</option>
+                <option value="Anthony Hall Berkeley">Anthony Hall</option>
+                <option value="Architects and Engineers Berkeley">Architects and Engineers</option>
+                <option value="2160 Shattuck Ave Berkeley">Bart Station</option>
+                <option value="Bechtel Engineering Center Berkeley">Bechtel Engineering Center</option>
+                <option value="Berkeley Art Museum">Berkeley Art Museum</option>
+                <option value="Birge Hall Berkeley">Birge Hall</option>
+                <option value="Blum Hall Berkeley">Blum Hall</option>
+                <option value="Boalt Hall Berkeley">Boalt Hall</option>
+                <option value="Botanical Garden Berkeley">Botanical Garden</option>
+                <option value="Brain Imaging Center Berkeley">Brain Imaging Center</option>
+                <option value="California Hall Berkeley">California Hall</option>
+                <option value="California Memorial Stadium Berkeley">California Memorial Stadium</option>
+                <option value="Calvin Laboratory Berkeley">Calvin Laboratory</option>
+                <option value="Sather Tower Berkeley">Campanile (Sather Tower)</option>
+                <option value="Campbell Hall Berkeley">Campbell Hall</option>
+                <option value="Career Center Berkeley">Career Center</option>
+                <option value="Valley Life Science Building Berkeley">Chan Shun Auditorium (Valley Life Sciences Bldg)</option>
+                <option value="Cheit Hall Berkeley">Cheit Hall</option>
+                <option value="Clark Kerr Campus Berkeley">Clark Kerr Campus</option>
+                <option value="Class of 1914 Fountain Berkeley">Class of 1914 Fountain</option>
+                <option value="Cory Hall Berkeley">Cory Hall</option>
+                <option value="Davis Hall Berkeley">Davis Hall</option>
+                <option value="Doe Memorial Library Berkeley">Doe Memorial Library</option>
+            </select>
+        </div>
 
-      <div class="footer">
+        <!-- map span -->
+        <div id="map-canvas"></div> 
+    
+        <!-- footer info -->
+        <div class="footer">
+            <p class="footerbody">2014 CS61A Hackathon - OSKI MAP made by Yoon Ho (Tony) Lee</p>
+        </div>
 
-        <p class="footerbody">2014 CS61A Hackathon - OSKI MAP</p>
-
-      </div>
-
-  </body>
+    </body>
 </html>

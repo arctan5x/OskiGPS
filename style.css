@@ -23,14 +23,26 @@ p {
 	width: 900px;
 	height: 550px;
  	position: absolute;
+ 	padding-top: 10px;
 	margin-top: 30px;
 	margin-left: 20%;
+	margin-right: 20%;
 	text-align: center;	
 
 }
 
 #manual_input {
 	text-align: center;	
+}
+
+#location_menu {
+    position: absolute;
+    top: 75px;
+    margin-left: 28%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
 }
 
 .footer {
@@ -47,14 +59,4 @@ p {
 	padding-left:15px;
 	color: white;
 	font-size: auto;
-}
-
-#panel {
-        position: absolute;
-        top: 75px;
-        margin-left: 28%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
 }
