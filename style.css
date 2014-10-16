@@ -77,6 +77,10 @@ p {
 	#map-canvas {
 		width: 300px;
 		height: 300px;
+		float:;
+		margin-left: 3%;
+		margin-right: 3%;
+
 	}
 	
 	#location_menu {
@@ -88,12 +92,12 @@ p {
 	}
 
 	.footer {
-	position:absolute;
-	bottom:0;
-	overflow:hidden;
-	background-color:#003262;
-	padding:0;
-	width:100%
+		position:absolute;
+		bottom:0;
+		overflow:hidden;
+		background-color:#003262;
+		padding:0;
+		width:100%
 }
 
 
