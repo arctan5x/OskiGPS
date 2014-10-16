@@ -75,8 +75,8 @@ p {
 	}
 
 	#map-canvas {
-		width: 300px;
-		height: 200px;
+		width: auto;
+		height: 100%;
 		float:;
 		margin-left: 3%;
 		margin-right: 3%;
