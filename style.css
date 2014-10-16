@@ -76,10 +76,11 @@ p {
 
 	#map-canvas {
 		width: 300px;
-		height: 300px;
+		height: 200px;
 		float:;
 		margin-left: 3%;
 		margin-right: 3%;
+		margin-top: 30px;
 
 	}
 	
