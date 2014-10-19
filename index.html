@@ -145,141 +145,136 @@
 
         <div id="location_menu">
             <b>Start: </b>
-            <select id="start" onchange="calcRoute();">
-                <option>Choose Location</option>
+             <select id="start" onchange="calcRoute();">
+                <option value="">Choose Location</option>
                 <option value></option>
                 <option value>-------Academic/Development Centers-------</option>
-                <option value="Architects and Engineers Berkeley">Architects and Engineers</option>
-                <option value="Bechtel Engineering Center Berkeley">Bechtel Engineering Center</option>
-                <option value="Brain Imaging Center Berkeley">Brain Imaging Center</option>
-                <option value="Career Center Berkeley">Career Center</option>
-                <option value="Haste Street Child Development Center, Berkeley">Haste Street Child Development Center</option>
-                <option value="Harold E. Jones Child Study Center">Jones Child Study Center</option>
-                <option value="Sproul Hall, Berkeley">Visitor Center</option>
+                <option value="Architects and Engineers Berkeley, Berkeley, CA">Architects and Engineers</option>
+                <option value="Bechtel Engineering Center Berkeley, Berkeley, CA">Bechtel Engineering Center</option>
+                <option value="Career Center Berkeley, Berkeley, CA">Career Center</option>
+                <option value="Haste Street Child Development Center, Berkeley, CA">Haste Street Child Development Center</option>
+                <option value="Harold E. Jones Child Study Center, Berkeley, CA">Jones Child Study Center</option>
+                <option value="Sproul Hall, Berkeley, Berkeley, CA">Visitor Center</option>
                 <option value></option>
                 <option value>-------Auditorium-------</option>
-                <option value="Andersen Auditorium (Haas School of Business)">Andersen Auditorium (Haas School of Business)</option>
-                <option value="Valley Life Science Building Berkeley">Chan Shun Auditorium (Valley Life Sciences Bldg)</option>
-                <option value="Soda Hall">Hewlett-Packard Auditorium</option>
-                <option value="Sibley Auditorium">Sibley Auditorium(Bechtel Engineering Center)</option>
+                <option value="Valley Life Science Building Berkeley, Berkeley, CA">Chan Shun Auditorium (Valley Life Sciences Bldg)</option>
+                <option value="Soda Hall, Berkeley, CA">Hewlett-Packard Auditorium</option>
                 <option value></option>
                 <option value>-------Faculty Buildings-------</option>
-                <option value="Alumni House Berkeley">Alumni House</option>
+                <option value="Alumni House Berkeley, Berkeley, CA">Alumni House</option>
                 <option value="The Faculty Club at UC Berkeley, Berkeley, CA">Faculty Club</option>
-                <option value="Women's Faculty Club, Berkeley">Women's Faculty Club</option>
+                <option value="Women's Faculty Club, Berkeley, CA">Women's Faculty Club</option>
                 <option value></option>
                 <option value>-------Health Centers-------</option>
-                <option value="Minor Hall">Optometry Clinic</option>
-                <option value="Tang Center, Berkeley CA">Optometry Clinic(Eye center in Tang Center)</option>
-                <option value="Tang Center, Berkeley CA">Tang Center</option>
+                <option value="Minor Hall, Berkeley, CA">Optometry Clinic</option>
+                <option value="Tang Center, Berkeley, CA">Optometry Clinic(Eye center in Tang Center)</option>
+                <option value="Tang Center, Berkeley, CA">Tang Center</option>
                 <option value="University Health Services, Bancroft Way, Berkeley">University Health Services</option>
                 <option value></option>
                 <option value>-------Laboratories/Research Institute-------</option>
-                <option value="Calvin Laboratory Berkeley">Calvin Laboratory</option>
+                <option value="Calvin Laboratory Berkeley, Berkeley, CA">Calvin Laboratory</option>
                 <option value="Lawrence Berkeley National Laboratory, Berkeley, CA">Lawrence Berkeley National Laboratory</option>
-                <option value="Mathematial Science Research Institute">Mathematical Science Research Institute</option>
-                <option value="Observatory Hill, Berkeley">Observatory Hill</option>
-                <option value="Space Sciences Laboratory">Space Sciences Laboratory</option>
+                <option value="Mathematial Science Research Institute, Berkeley, CA">Mathematical Science Research Institute</option>
+                <option value="Observatory Hill, Berkeley, Berkeley, CA">Observatory Hill</option>
+                <option value="Space Sciences Laboratory, Berkeley, CA">Space Sciences Laboratory</option>
                 <option value></option>
                 <option value>-------Lecture Hall-------</option>
-                <option value="Anthony Hall Berkeley">Anthony Hall</option>
-                <option value="Barker Hall">Barker Hall</option>
-                <option value="Barrows Hall">Barrows Hall</option>
-                <option value="Birge Hall Berkeley">Birge Hall</option>
-                <option value="Blum Hall Berkeley">Blum Hall</option>
-                <option value="Boalt Hall Berkeley">Boalt Hall</option>
-                <option value="California Hall Berkeley">California Hall</option>
-                <option value="Campbell Hall Berkeley">Campbell Hall</option>
-                <option value="Cheit Hall Berkeley">Cheit Hall</option>
-                <option value="Cory Hall Berkeley">Cory Hall</option>
-                <option value="Davis Hall Berkeley">Davis Hall</option>
+                <option value="Anthony Hall Berkeley, Berkeley, CA">Anthony Hall</option>
+                <option value="Barker Hall, Berkeley, CA">Barker Hall</option>
+                <option value="Barrows Hall, Berkeley, CA">Barrows Hall</option>
+                <option value="Birge Hall Berkeley, Berkeley, CA">Birge Hall</option>
+                <option value="Blum Hall Berkeley, Berkeley, CA">Blum Hall</option>
+                <option value="Boalt Hall Berkeley, Berkeley, CA">Boalt Hall</option>
+                <option value="California Hall Berkeley, Berkeley, CA">California Hall</option>
+                <option value="Campbell Hall Berkeley, Berkeley, CA">Campbell Hall</option>
+                <option value="Cheit Hall Berkeley, Berkeley, CA">Cheit Hall</option>
+                <option value="Cory Hall Berkeley, Berkeley, CA">Cory Hall</option>
+                <option value="Davis Hall Berkeley, Berkeley, CA">Davis Hall</option>
                 <option value="Durant Hall, University of California, Berkeley">Durant Hall</option>
                 <option value="Dwinelle Hall, University of California, Berkeley">Dwinelle Hall</option>
                 <option value="Energy Biosciences Institute, Berkeley Way, Berkeley, CA">Energy Bioscience Building</option>
-                <option value="Etcheverry Hall">Etcheverry Hall</option>
-                <option value="Evans Hall">Evans Hall</option>
+                <option value="Etcheverry Hall, Berkeley, CA">Etcheverry Hall</option>
+                <option value="Evans Hall, Berkeley, CA">Evans Hall</option>
                 <option value="Minor Hall, UC Berkeley School of Optometry Professional Program">Eye Center(Minor Hall)</option>
-                <option value="Department of Plant and Microbial Biology">Genetic and Plant Biology Bldg.</option>
-                <option value="Giannini Foundation Library">Gianini Hall</option>
-                <option value="Gilman Hall">Giauque Hall</option>
-                <option value="Gilman Hall">Gilman Hall</option>
-                <option value="Girton Hall">Girton Hall</option>
-                <option value="Richard & Rhoda Goldman School of Public Policy">Goldman School of Public Policy</option>
-                <option value="Hass School of Business">Hass School of Business</option>
-                <option value="Haviland Hall">Haviland Hall</option>
-                <option value="Hearst Memorial Mining">Hearst Memorial Mining Bldg.</option>
-                <option value="Hertz Hall">Hertz Hall</option>
-                <option value="Department of Civil and Environmental Engineering">Hesse Hall</option>
-                <option value="Hildebrand Hall, Berkeley">Hildebrand Hall</option>
-                <option value="Koshland Hall">Koshland Hall</option>
-                <option value="University of California: Department of Chemistry">Latimer Hall</option>
-                <option value="Lawrence Hall of Science">Lawrence Hall</option>
-                <option value="LeConte Hall">LeConte Hall</option>
-                <option value="Lewis Hall, Berkeley">Lewis Hall</option>
-                <option value="McCone Hall">McCone Hall</option>
-                <option value="McLaughlin Hall">McLaughlin Hall</option>
-                <option value="Memorial Glade">Memorial Glade</option>
-                <option value="Minor Hall">Minor Hall</option>
-                <option value="Minor Hall Addition">Minor Hall Addition</option>
-                <option value="Morgan Hall">Morgan Hall</option>
-                <option value="Morrison Hall">Morrison Hall</option>
-                <option value="Moses Hall">Moses Hall</option>
-                <option value="Mulford Hall, Berkeley">Mulford Hall</option>
-                <option value="North Gate Hall, Berkeley">North Gate Hall</option>
-                <option value="O'Brien Hall, Berkeley">O'Brien Hall</option>
-                <option value="Woo Hon Fai Hall, 2626 Durant Ave">Pacific Film Archieve(Woo Hon Fai Hall)</option>
-                <option value="Pimental Hall">Pimental Hall</option>
-                <option value="Senior Hall">Senior Hall</option>
-                <option value="Manville Hall">Simon Hall</option>
-                <option value="Soda Hall">Soda Hall</option>
-                <option value="South Hall">South Hall</option>
-                <option value="Sproul Hall">Sproul Hall</option>
-                <option value="Stanely Hall">Stanely Hall</option>
-                <option value="Sutardja Dai Hall">Sutardja Dai Hall</option>
-                <option value="Tolman Hall, Berkeley">Tolman Hall</option>
-                <option value="University Hall, Oxford Street, Berkeley">University Hall</option>
-                <option value="Valley Life Sciencees Building">Valley Life Science Buildings</option>
-                <option value="Life Science Addition: West Circle Side">Valley Life Science Addition</option>
-                <option value="Warren Hall: West Crescent Side">Warren Hall</option>
-                <option value="Wellman Hall, Berkeley">Wellman Hall</option>
-                <option value="Wheeler Hall, Berkeley">Wheeler Hall</option>
-                <option value="Wurster Hall, Berkeley">Wurster Hall</option>
-                <option value="Zellerbach Hall, Berkeley">Zellerbach Hall</option>
+                <option value="Department of Plant and Microbial Biology, Berkeley, CA">Genetic and Plant Biology Bldg.</option>
+                <option value="Giannini Foundation Library, Berkeley, CA">Gianini Hall</option>
+                <option value="Gilman Hall, Berkeley, CA">Giauque Hall</option>
+                <option value="Gilman Hall, Berkeley, CA">Gilman Hall</option>
+                <option value="Girton Hall, Berkeley, CA">Girton Hall</option>
+                <option value="Richard & Rhoda Goldman School of Public Policy, Berkeley, CA">Goldman School of Public Policy</option>
+                <option value="Hass School of Business, Berkeley, CA">Hass School of Business</option>
+                <option value="Haviland Hall, Berkeley, CA">Haviland Hall</option>
+                <option value="Hearst Memorial Mining, Berkeley, CA">Hearst Memorial Mining Bldg.</option>
+                <option value="Hertz Hall, Berkeley, CA">Hertz Hall</option>
+                <option value="Department of Civil and Environmental Engineering, Berkeley, CA">Hesse Hall</option>
+                <option value="Hildebrand Hall, Berkeley, Berkeley, CA">Hildebrand Hall</option>
+                <option value="Koshland Hall, Berkeley, CA">Koshland Hall</option>
+                <option value="University of California: Department of Chemistry, Berkeley, CA">Latimer Hall</option>
+                <option value="Lawrence Hall of Science, Berkeley, CA">Lawrence Hall</option>
+                <option value="LeConte Hall, Berkeley, CA">LeConte Hall</option>
+                <option value="Lewis Hall, Berkeley, CA">Lewis Hall</option>
+                <option value="McCone Hall, Berkeley, CA">McCone Hall</option>
+                <option value="McLaughlin Hall, Berkeley, CA">McLaughlin Hall</option>
+                <option value="Memorial Glade, Berkeley, CA">Memorial Glade</option>
+                <option value="Minor Hall, Berkeley, CA">Minor Hall</option>
+                <option value="Minor Hall Addition, Berkeley, CA">Minor Hall Addition</option>
+                <option value="Morgan Hall, Berkeley, CA">Morgan Hall</option>
+                <option value="Morrison Hall, Berkeley, CA">Morrison Hall</option>
+                <option value="Moses Hall, Berkeley, CA">Moses Hall</option>
+                <option value="Mulford Hall, Berkeley, CA">Mulford Hall</option>
+                <option value="North Gate Hall, Berkeley, CA">North Gate Hall</option>
+                <option value="O'Brien Hall, Berkeley, CA">O'Brien Hall</option>
+                <option value="Woo Hon Fai Hall, 2626 Durant Ave, Berkeley, CA">Pacific Film Archieve(Woo Hon Fai Hall)</option>
+                <option value="Pimental Hall, Berkeley, CA">Pimental Hall</option>
+                <option value="Senior Hall, Berkeley, CA">Senior Hall</option>
+                <option value="Manville Hall, Berkeley, CA">Simon Hall</option>
+                <option value="Soda Hall, Berkeley, CA">Soda Hall</option>
+                <option value="South Hall, Berkeley, CA">South Hall</option>
+                <option value="Sproul Hall, Berkeley, CA">Sproul Hall</option>
+                <option value="Stanely Hall, Berkeley, CA">Stanely Hall</option>
+                <option value="Sutardja Dai Hall, Berkeley, CA">Sutardja Dai Hall</option>
+                <option value="Tolman Hall, Berkeley, Berkeley, CA">Tolman Hall</option>
+                <option value="University Hall, Oxford Street, Berkeley, CA">University Hall</option>
+                <option value="Valley Life Sciencees Building, Berkeley, CA">Valley Life Science Buildings</option>
+                <option value="Life Science Addition: West Circle Side, Berkeley, CA">Valley Life Science Addition</option>
+                <option value="Warren Hall: West Crescent Side, Berkeley, CA">Warren Hall</option>
+                <option value="Wellman Hall, Berkeley, CA">Wellman Hall</option>
+                <option value="Wheeler Hall, Berkeley, CA">Wheeler Hall</option>
+                <option value="Wurster Hall, Berkeley, CA">Wurster Hall</option>
+                <option value="Zellerbach Hall, Berkeley, CA">Zellerbach Hall</option>
                 <option value></option>
                 <option value>-------Library-------</option>
                 <option value="Bancroft Library, University of California, Berkeley, Berkeley">Bancroft Library</option>
-                <option value="Doe Memorial Library Berkeley">Doe Memorial Library</option>
+                <option value="Doe Memorial Library Berkeley, Berkeley, CA">Doe Memorial Library</option>
                 <option value="Donner Laboratory, Berkeley, CA">Donner Lab</option>
-                <option value="Hargrove Music Library">Hargrove Music Library</option>
-                <option value="Moffitt Undergraduate Library">Moffitt Undergraduate Library</option>
-                <option value="Marian Koshland Bioscience & Natural Resources Library">Natural Resources Library</option>
+                <option value="Hargrove Music Library, Berkeley, CA">Hargrove Music Library</option>
+                <option value="Moffitt Undergraduate Library, Berkeley, CA">Moffitt Undergraduate Library</option>
+                <option value="Marian Koshland Bioscience & Natural Resources Library, Berkeley, CA">Natural Resources Library</option>
                 <option value></option>
                  <option value>-------Major Locations-------</option>
-                <option value="2160 Shattuck Ave Berkeley">Bart Station</option>
-                <option value="Class of 1914 Fountain Berkeley">Class of 1914 Fountain</option>
-                <option value="Evans Diamond">Evans Diamond</option>
+                <option value="2160 Shattuck Ave Berkeley, Berkeley, CA">Bart Station</option>
+                <option value="Class of 1914 Fountain Berkeley, Berkeley, CA">Class of 1914 Fountain</option>
                 <option value="The Faculty Club at UC Berkeley, Berkeley, CA">Faculty Glade</option>            
-                <option value="Eucalyptus Grove/Grinnell Natural Area">Grinnell Natural Area</option>
-                <option value="Hearst Mining Circle">Hearst Mining Circle</option>
-                <option value="Central Heating Plant">Heating Plant Central</option>
-                <option value="Ishi Court">Ishi Court</option>
-                <option value="Lower Sproul Plaza">Lower Sproul Plaza</option> <option value="Heart North Field, Berkeley">North Field</option>
-                <option value="North Gate Hall, Berkeley">North Gate</option>
-                <option value="Sather Gate">Sather Gate</option>
-                <option value="Spieker Plaza, Berkeley">Spieker Plaza</option>
-                <option value="Stadium Rim Way">Stadium Rim Way</option>
-                <option value="University of California Press, Berkeley">University of California Press</option>
-                <option value="West Cir, Berkeley">West Circle</option>
-                <option value="West St, Berkeley">West Gate</option>
+                <option value="Eucalyptus Grove/Grinnell Natural Area, Berkeley, CA">Grinnell Natural Area</option>
+                <option value="Hearst Mining Circle, Berkeley, CA">Hearst Mining Circle</option>
+                <option value="Central Heating Plant, Berkeley, CA">Heating Plant Central</option>
+                <option value="Ishi Court, Berkeley, CA">Ishi Court</option>
+                <option value="Lower Sproul Plaza, Berkeley, CA">Lower Sproul Plaza</option>
+                <option value="North Gate Hall, Berkeley, Berkeley, CA">North Gate</option>
+                <option value="Sather Gate, Berkeley, CA">Sather Gate</option>
+                <option value="Spieker Plaza, Berkeley, Berkeley, CA">Spieker Plaza</option>
+                <option value="Stadium Rim Way, Berkeley, CA">Stadium Rim Way</option>
+                <option value="University of California Press, Berkeley, Berkeley, CA">University of California Press</option>
+                <option value="West Cir, Berkeley, Berkeley, CA">West Circle</option>
                 <option value></option>
                 <option>-------Residential Hall-------</option>
-                <option value="Bowles Hall, Berkeley">Bowles Hall</option>
-                <option value="Clark Kerr Campus, Berkeley">Clark Kerr Campus</option>
-                <option value="Cleary Hall, Berkeley">Cleary Hall</option>
-                <option value="Foothill Student Housing: Hearst Avenue Side">Foothill Residence Halls</option>
-                <option value="Ida Louise Jackson Graduate House, Berkeley">Ida Lousie Jackson Graduate House</option>
+                <option value="Bowles Hall, Berkeley, Berkeley, CA">Bowles Hall</option>
+                <option value="Clark Kerr Campus, Berkeley, Berkeley, CA">Clark Kerr Campus</option>
+                <option value="Cleary Hall, Berkeley, CA">Cleary Hall</option>
+                <option value="Foothill Student Housing: Hearst Avenue Side, Berkeley, CA">Foothill Residence Halls</option>
+                <option value="Ida Louise Jackson Graduate House, Berkeley, CA">Ida Lousie Jackson Graduate House</option>
                 <option value="International House, UC Berkeley, Piedmont Avenue, Berkeley, CA">International House</option>
-                <option value="Martinez Commons, Berkeley">Martinez Commons</option>
+                <option value="Martinez Commons, Berkeley, CA">Martinez Commons</option>
                 <option value="Stern Hall, Berkeley">Stern Hall</option>
                 <option value="Unit 1, Berkeley">Unit 1</option>
                 <option value="Unit 2, Berkeley">Unit 2</option>
@@ -287,171 +282,165 @@
                 <option value="University House, University of California, Berkeley">University House</option>
                 <option value></option>
                 <option value>-------Recreational Facility-------</option>
-                <option value="Berkeley Art Museum">Berkeley Art Museum</option>
-                <option value="Botanical Garden Berkeley">Botanical Garden</option>
-                <option value="Sather Tower Berkeley">Campanile (Sather Tower)</option>
+                <option value="Berkeley Art Museum, Berkeley, CA">Berkeley Art Museum</option>
+                <option value="Botanical Garden Berkeley, Berkeley, CA">Botanical Garden</option>
+                <option value="Sather Tower Berkeley, Berkeley, CA">Campanile (Sather Tower)</option>
                 <option value="Durham Studio Theater, Berkeley">Durham Studio Theatre</option>
-                <option value="Recreational Sports Facility">Golden Bear Recreation Center</option>
-                <option value="Hearst Greek Theatre">Hearst Greek Theatre</option>
-                <option value="Kleeberger Field House">Kleeberger Field House</option>
-                <option value="Martin Luther King Student Union, Berkeley">Martin Luther King Student Union</option>
-                <option value="Old Art Gallery, Berkeley">Old Art Gallery</option>
-                <option value="Pacific Film Archive">Pacific Film Archieve Theatre</option>
-                <option value="Recreational Sports Facility">Recreational Sports Facility</option>
-                <option value="Strawberry Canyon Recreational Area">Strawberry Canyon Recreational Area</option>
-                <option value="Zellerbach Hall, Berkeley">Zellerbach Playhouse</option>
+                <option value="Recreational Sports Facility, Berkeley, CA">Golden Bear Recreation Center</option>
+                <option value="Hearst Greek Theatre, Berkeley, CA">Hearst Greek Theatre</option>
+                <option value="Kleeberger Field House, Berkeley, CA">Kleeberger Field House</option>
+                <option value="Martin Luther King Student Union, Berkeley, CA">Martin Luther King Student Union</option>
+                <option value="Old Art Gallery, Berkeley, CA">Old Art Gallery</option>
+                <option value="Pacific Film Archive, Berkeley, CA">Pacific Film Archieve Theatre</option>
+                <option value="Recreational Sports Facility, Berkeley, CA">Recreational Sports Facility</option>
+                <option value="Strawberry Canyon Recreational Area, Berkeley, CA">Strawberry Canyon Recreational Area</option>
+                <option value="Zellerbach Hall, Berkeley, CA">Zellerbach Playhouse</option>
                 <option value></option>
                 <option value>-------Sports Facility/Stadium-------</object>
-                <option value="California Memorial Stadium Berkeley">California Memorial Stadium</option>
+                <option value="California Memorial Stadium Berkeley, Berkeley, CA">California Memorial Stadium</option>
                 <option value="Edwards Stadium, Fulton Street, Berkeley, CA">Edward Stadium</option>
-                <option value="Hass Pavilion, Berkeley">Hass Pavilion</option>
-                <option value="Hearst Field Annex">Hearst Field Annex</option>
-                <option value="Hearst Memorial Gymnasium">Hearst Memorial Gymnasium</option>
-                <option value="Hellman Tennis Center">Hellman Tennis Center</option>
-                <option value="Levine-Fricke Softball Field, Berkeley">Levine-Fricke Field</option>
-                <option value="Maxwell Family Field">Maxwell Family Field</option>
-                <option value="Recreational Sports Facility">Spieker Aquatics Center</option>
-                <option value="Underhill Parking and Field">Underhill Playing Field</option>
+                <option value="Hass Pavilion, Berkeley, CA">Hass Pavilion</option>
+                <option value="Hearst Field Annex, Berkeley, CA">Hearst Field Annex</option>
+                <option value="Hearst Memorial Gymnasium, Berkeley, CA">Hearst Memorial Gymnasium</option>
+                <option value="Hellman Tennis Center, Berkeley, CA">Hellman Tennis Center</option>
+                <option value="Maxwell Family Field, Berkeley, CA">Maxwell Family Field</option>
+                <option value="Recreational Sports Facility, Berkeley, CA">Spieker Aquatics Center</option>
+                <option value="Underhill Parking and Field, Berkeley, CA">Underhill Playing Field</option>
                 <option value="Witter Field, 210 Stadium Rim Way, Berkeley">Witter Field</option>
                 
             </select>
 
             <b>End: </b>
             <select id="end" onchange="calcRoute();">
-                <option>Choose Location</option>
+<option value="">Choose Location</option>
                 <option value></option>
                 <option value>-------Academic/Development Centers-------</option>
-                <option value="Architects and Engineers Berkeley">Architects and Engineers</option>
-                <option value="Bechtel Engineering Center Berkeley">Bechtel Engineering Center</option>
-                <option value="Brain Imaging Center Berkeley">Brain Imaging Center</option>
-                <option value="Career Center Berkeley">Career Center</option>
-                <option value="Haste Street Child Development Center, Berkeley">Haste Street Child Development Center</option>
-                <option value="Harold E. Jones Child Study Center">Jones Child Study Center</option>
-                <option value="Sproul Hall, Berkeley">Visitor Center</option>
+                <option value="Architects and Engineers Berkeley, Berkeley, CA">Architects and Engineers</option>
+                <option value="Bechtel Engineering Center Berkeley, Berkeley, CA">Bechtel Engineering Center</option>
+                <option value="Career Center Berkeley, Berkeley, CA">Career Center</option>
+                <option value="Haste Street Child Development Center, Berkeley, CA">Haste Street Child Development Center</option>
+                <option value="Harold E. Jones Child Study Center, Berkeley, CA">Jones Child Study Center</option>
+                <option value="Sproul Hall, Berkeley, Berkeley, CA">Visitor Center</option>
                 <option value></option>
                 <option value>-------Auditorium-------</option>
-                <option value="Andersen Auditorium (Haas School of Business)">Andersen Auditorium (Haas School of Business)</option>
-                <option value="Valley Life Science Building Berkeley">Chan Shun Auditorium (Valley Life Sciences Bldg)</option>
-                <option value="Soda Hall">Hewlett-Packard Auditorium</option>
-                <option value="Sibley Auditorium">Sibley Auditorium(Bechtel Engineering Center)</option>
+                <option value="Valley Life Science Building Berkeley, Berkeley, CA">Chan Shun Auditorium (Valley Life Sciences Bldg)</option>
+                <option value="Soda Hall, Berkeley, CA">Hewlett-Packard Auditorium</option>
                 <option value></option>
                 <option value>-------Faculty Buildings-------</option>
-                <option value="Alumni House Berkeley">Alumni House</option>
+                <option value="Alumni House Berkeley, Berkeley, CA">Alumni House</option>
                 <option value="The Faculty Club at UC Berkeley, Berkeley, CA">Faculty Club</option>
-                <option value="Women's Faculty Club, Berkeley">Women's Faculty Club</option>
+                <option value="Women's Faculty Club, Berkeley, CA">Women's Faculty Club</option>
                 <option value></option>
                 <option value>-------Health Centers-------</option>
-                <option value="Minor Hall">Optometry Clinic</option>
-                <option value="Tang Center, Berkeley CA">Optometry Clinic(Eye center in Tang Center)</option>
-                <option value="Tang Center, Berkeley CA">Tang Center</option>
+                <option value="Minor Hall, Berkeley, CA">Optometry Clinic</option>
+                <option value="Tang Center, Berkeley, CA">Optometry Clinic(Eye center in Tang Center)</option>
+                <option value="Tang Center, Berkeley, CA">Tang Center</option>
                 <option value="University Health Services, Bancroft Way, Berkeley">University Health Services</option>
                 <option value></option>
                 <option value>-------Laboratories/Research Institute-------</option>
-                <option value="Calvin Laboratory Berkeley">Calvin Laboratory</option>
+                <option value="Calvin Laboratory Berkeley, Berkeley, CA">Calvin Laboratory</option>
                 <option value="Lawrence Berkeley National Laboratory, Berkeley, CA">Lawrence Berkeley National Laboratory</option>
-                <option value="Mathematial Science Research Institute">Mathematical Science Research Institute</option>
-                <option value="Observatory Hill, Berkeley">Observatory Hill</option>
-                <option value="Space Sciences Laboratory">Space Sciences Laboratory</option>
+                <option value="Mathematial Science Research Institute, Berkeley, CA">Mathematical Science Research Institute</option>
+                <option value="Observatory Hill, Berkeley, Berkeley, CA">Observatory Hill</option>
+                <option value="Space Sciences Laboratory, Berkeley, CA">Space Sciences Laboratory</option>
                 <option value></option>
                 <option value>-------Lecture Hall-------</option>
-                <option value="Anthony Hall Berkeley">Anthony Hall</option>
-                <option value="Barker Hall">Barker Hall</option>
-                <option value="Barrows Hall">Barrows Hall</option>
-                <option value="Birge Hall Berkeley">Birge Hall</option>
-                <option value="Blum Hall Berkeley">Blum Hall</option>
-                <option value="Boalt Hall Berkeley">Boalt Hall</option>
-                <option value="California Hall Berkeley">California Hall</option>
-                <option value="Campbell Hall Berkeley">Campbell Hall</option>
-                <option value="Cheit Hall Berkeley">Cheit Hall</option>
-                <option value="Cory Hall Berkeley">Cory Hall</option>
-                <option value="Davis Hall Berkeley">Davis Hall</option>
+                <option value="Anthony Hall Berkeley, Berkeley, CA">Anthony Hall</option>
+                <option value="Barker Hall, Berkeley, CA">Barker Hall</option>
+                <option value="Barrows Hall, Berkeley, CA">Barrows Hall</option>
+                <option value="Birge Hall Berkeley, Berkeley, CA">Birge Hall</option>
+                <option value="Blum Hall Berkeley, Berkeley, CA">Blum Hall</option>
+                <option value="Boalt Hall Berkeley, Berkeley, CA">Boalt Hall</option>
+                <option value="California Hall Berkeley, Berkeley, CA">California Hall</option>
+                <option value="Campbell Hall Berkeley, Berkeley, CA">Campbell Hall</option>
+                <option value="Cheit Hall Berkeley, Berkeley, CA">Cheit Hall</option>
+                <option value="Cory Hall Berkeley, Berkeley, CA">Cory Hall</option>
+                <option value="Davis Hall Berkeley, Berkeley, CA">Davis Hall</option>
                 <option value="Durant Hall, University of California, Berkeley">Durant Hall</option>
                 <option value="Dwinelle Hall, University of California, Berkeley">Dwinelle Hall</option>
                 <option value="Energy Biosciences Institute, Berkeley Way, Berkeley, CA">Energy Bioscience Building</option>
-                <option value="Etcheverry Hall">Etcheverry Hall</option>
-                <option value="Evans Hall">Evans Hall</option>
+                <option value="Etcheverry Hall, Berkeley, CA">Etcheverry Hall</option>
+                <option value="Evans Hall, Berkeley, CA">Evans Hall</option>
                 <option value="Minor Hall, UC Berkeley School of Optometry Professional Program">Eye Center(Minor Hall)</option>
-                <option value="Department of Plant and Microbial Biology">Genetic and Plant Biology Bldg.</option>
-                <option value="Giannini Foundation Library">Gianini Hall</option>
-                <option value="Gilman Hall">Giauque Hall</option>
-                <option value="Gilman Hall">Gilman Hall</option>
-                <option value="Girton Hall">Girton Hall</option>
-                <option value="Richard & Rhoda Goldman School of Public Policy">Goldman School of Public Policy</option>
-                <option value="Hass School of Business">Hass School of Business</option>
-                <option value="Haviland Hall">Haviland Hall</option>
-                <option value="Hearst Memorial Mining">Hearst Memorial Mining Bldg.</option>
-                <option value="Hertz Hall">Hertz Hall</option>
-                <option value="Department of Civil and Environmental Engineering">Hesse Hall</option>
-                <option value="Hildebrand Hall, Berkeley">Hildebrand Hall</option>
-                <option value="Koshland Hall">Koshland Hall</option>
-                <option value="University of California: Department of Chemistry">Latimer Hall</option>
-                <option value="Lawrence Hall of Science">Lawrence Hall</option>
-                <option value="LeConte Hall">LeConte Hall</option>
-                <option value="Lewis Hall, Berkeley">Lewis Hall</option>
-                <option value="McCone Hall">McCone Hall</option>
-                <option value="McLaughlin Hall">McLaughlin Hall</option>
-                <option value="Memorial Glade">Memorial Glade</option>
-                <option value="Minor Hall">Minor Hall</option>
-                <option value="Minor Hall Addition">Minor Hall Addition</option>
-                <option value="Morgan Hall">Morgan Hall</option>
-                <option value="Morrison Hall">Morrison Hall</option>
-                <option value="Moses Hall">Moses Hall</option>
-                <option value="Mulford Hall, Berkeley">Mulford Hall</option>
-                <option value="North Gate Hall, Berkeley">North Gate Hall</option>
-                <option value="O'Brien Hall, Berkeley">O'Brien Hall</option>
-                <option value="Woo Hon Fai Hall, 2626 Durant Ave">Pacific Film Archieve(Woo Hon Fai Hall)</option>
-                <option value="Pimental Hall">Pimental Hall</option>
-                <option value="Senior Hall">Senior Hall</option>
-                <option value="Manville Hall">Simon Hall</option>
-                <option value="Soda Hall">Soda Hall</option>
-                <option value="South Hall">South Hall</option>
-                <option value="Sproul Hall">Sproul Hall</option>
-                <option value="Stanely Hall">Stanely Hall</option>
-                <option value="Sutardja Dai Hall">Sutardja Dai Hall</option>
-                <option value="Tolman Hall, Berkeley">Tolman Hall</option>
-                <option value="University Hall, Oxford Street, Berkeley">University Hall</option>
-                <option value="Valley Life Sciencees Building">Valley Life Science Buildings</option>
-                <option value="Life Science Addition: West Circle Side">Valley Life Science Addition</option>
-                <option value="Warren Hall: West Crescent Side">Warren Hall</option>
-                <option value="Wellman Hall, Berkeley">Wellman Hall</option>
-                <option value="Wheeler Hall, Berkeley">Wheeler Hall</option>
-                <option value="Wurster Hall, Berkeley">Wurster Hall</option>
-                <option value="Zellerbach Hall, Berkeley">Zellerbach Hall</option>
+                <option value="Department of Plant and Microbial Biology, Berkeley, CA">Genetic and Plant Biology Bldg.</option>
+                <option value="Giannini Foundation Library, Berkeley, CA">Gianini Hall</option>
+                <option value="Gilman Hall, Berkeley, CA">Giauque Hall</option>
+                <option value="Gilman Hall, Berkeley, CA">Gilman Hall</option>
+                <option value="Girton Hall, Berkeley, CA">Girton Hall</option>
+                <option value="Richard & Rhoda Goldman School of Public Policy, Berkeley, CA">Goldman School of Public Policy</option>
+                <option value="Hass School of Business, Berkeley, CA">Hass School of Business</option>
+                <option value="Haviland Hall, Berkeley, CA">Haviland Hall</option>
+                <option value="Hearst Memorial Mining, Berkeley, CA">Hearst Memorial Mining Bldg.</option>
+                <option value="Hertz Hall, Berkeley, CA">Hertz Hall</option>
+                <option value="Department of Civil and Environmental Engineering, Berkeley, CA">Hesse Hall</option>
+                <option value="Hildebrand Hall, Berkeley, Berkeley, CA">Hildebrand Hall</option>
+                <option value="Koshland Hall, Berkeley, CA">Koshland Hall</option>
+                <option value="University of California: Department of Chemistry, Berkeley, CA">Latimer Hall</option>
+                <option value="Lawrence Hall of Science, Berkeley, CA">Lawrence Hall</option>
+                <option value="LeConte Hall, Berkeley, CA">LeConte Hall</option>
+                <option value="Lewis Hall, Berkeley, CA">Lewis Hall</option>
+                <option value="McCone Hall, Berkeley, CA">McCone Hall</option>
+                <option value="McLaughlin Hall, Berkeley, CA">McLaughlin Hall</option>
+                <option value="Memorial Glade, Berkeley, CA">Memorial Glade</option>
+                <option value="Minor Hall, Berkeley, CA">Minor Hall</option>
+                <option value="Minor Hall Addition, Berkeley, CA">Minor Hall Addition</option>
+                <option value="Morgan Hall, Berkeley, CA">Morgan Hall</option>
+                <option value="Morrison Hall, Berkeley, CA">Morrison Hall</option>
+                <option value="Moses Hall, Berkeley, CA">Moses Hall</option>
+                <option value="Mulford Hall, Berkeley, CA">Mulford Hall</option>
+                <option value="North Gate Hall, Berkeley, CA">North Gate Hall</option>
+                <option value="O'Brien Hall, Berkeley, CA">O'Brien Hall</option>
+                <option value="Woo Hon Fai Hall, 2626 Durant Ave, Berkeley, CA">Pacific Film Archieve(Woo Hon Fai Hall)</option>
+                <option value="Pimental Hall, Berkeley, CA">Pimental Hall</option>
+                <option value="Senior Hall, Berkeley, CA">Senior Hall</option>
+                <option value="Manville Hall, Berkeley, CA">Simon Hall</option>
+                <option value="Soda Hall, Berkeley, CA">Soda Hall</option>
+                <option value="South Hall, Berkeley, CA">South Hall</option>
+                <option value="Sproul Hall, Berkeley, CA">Sproul Hall</option>
+                <option value="Stanely Hall, Berkeley, CA">Stanely Hall</option>
+                <option value="Sutardja Dai Hall, Berkeley, CA">Sutardja Dai Hall</option>
+                <option value="Tolman Hall, Berkeley, Berkeley, CA">Tolman Hall</option>
+                <option value="University Hall, Oxford Street, Berkeley, CA">University Hall</option>
+                <option value="Valley Life Sciencees Building, Berkeley, CA">Valley Life Science Buildings</option>
+                <option value="Life Science Addition: West Circle Side, Berkeley, CA">Valley Life Science Addition</option>
+                <option value="Warren Hall: West Crescent Side, Berkeley, CA">Warren Hall</option>
+                <option value="Wellman Hall, Berkeley, CA">Wellman Hall</option>
+                <option value="Wheeler Hall, Berkeley, CA">Wheeler Hall</option>
+                <option value="Wurster Hall, Berkeley, CA">Wurster Hall</option>
+                <option value="Zellerbach Hall, Berkeley, CA">Zellerbach Hall</option>
                 <option value></option>
                 <option value>-------Library-------</option>
                 <option value="Bancroft Library, University of California, Berkeley, Berkeley">Bancroft Library</option>
-                <option value="Doe Memorial Library Berkeley">Doe Memorial Library</option>
+                <option value="Doe Memorial Library Berkeley, Berkeley, CA">Doe Memorial Library</option>
                 <option value="Donner Laboratory, Berkeley, CA">Donner Lab</option>
-                <option value="Hargrove Music Library">Hargrove Music Library</option>
-                <option value="Moffitt Undergraduate Library">Moffitt Undergraduate Library</option>
-                <option value="Marian Koshland Bioscience & Natural Resources Library">Natural Resources Library</option>
+                <option value="Hargrove Music Library, Berkeley, CA">Hargrove Music Library</option>
+                <option value="Moffitt Undergraduate Library, Berkeley, CA">Moffitt Undergraduate Library</option>
+                <option value="Marian Koshland Bioscience & Natural Resources Library, Berkeley, CA">Natural Resources Library</option>
                 <option value></option>
                  <option value>-------Major Locations-------</option>
-                <option value="2160 Shattuck Ave Berkeley">Bart Station</option>
-                <option value="Class of 1914 Fountain Berkeley">Class of 1914 Fountain</option>
-                <option value="Evans Diamond">Evans Diamond</option>
+                <option value="2160 Shattuck Ave Berkeley, Berkeley, CA">Bart Station</option>
+                <option value="Class of 1914 Fountain Berkeley, Berkeley, CA">Class of 1914 Fountain</option>
                 <option value="The Faculty Club at UC Berkeley, Berkeley, CA">Faculty Glade</option>            
-                <option value="Eucalyptus Grove/Grinnell Natural Area">Grinnell Natural Area</option>
-                <option value="Hearst Mining Circle">Hearst Mining Circle</option>
-                <option value="Central Heating Plant">Heating Plant Central</option>
-                <option value="Ishi Court">Ishi Court</option>
-                <option value="Lower Sproul Plaza">Lower Sproul Plaza</option> <option value="Heart North Field, Berkeley">North Field</option>
-                <option value="North Gate Hall, Berkeley">North Gate</option>
-                <option value="Sather Gate">Sather Gate</option>
-                <option value="Spieker Plaza, Berkeley">Spieker Plaza</option>
-                <option value="Stadium Rim Way">Stadium Rim Way</option>
-                <option value="University of California Press, Berkeley">University of California Press</option>
-                <option value="West Cir, Berkeley">West Circle</option>
-                <option value="West St, Berkeley">West Gate</option>
+                <option value="Eucalyptus Grove/Grinnell Natural Area, Berkeley, CA">Grinnell Natural Area</option>
+                <option value="Hearst Mining Circle, Berkeley, CA">Hearst Mining Circle</option>
+                <option value="Central Heating Plant, Berkeley, CA">Heating Plant Central</option>
+                <option value="Ishi Court, Berkeley, CA">Ishi Court</option>
+                <option value="Lower Sproul Plaza, Berkeley, CA">Lower Sproul Plaza</option>
+                <option value="North Gate Hall, Berkeley, Berkeley, CA">North Gate</option>
+                <option value="Sather Gate, Berkeley, CA">Sather Gate</option>
+                <option value="Spieker Plaza, Berkeley, Berkeley, CA">Spieker Plaza</option>
+                <option value="Stadium Rim Way, Berkeley, CA">Stadium Rim Way</option>
+                <option value="University of California Press, Berkeley, Berkeley, CA">University of California Press</option>
+                <option value="West Cir, Berkeley, Berkeley, CA">West Circle</option>
                 <option value></option>
                 <option>-------Residential Hall-------</option>
-                <option value="Bowles Hall, Berkeley">Bowles Hall</option>
-                <option value="Clark Kerr Campus, Berkeley">Clark Kerr Campus</option>
-                <option value="Cleary Hall, Berkeley">Cleary Hall</option>
-                <option value="Foothill Student Housing: Hearst Avenue Side">Foothill Residence Halls</option>
-                <option value="Ida Louise Jackson Graduate House, Berkeley">Ida Lousie Jackson Graduate House</option>
+                <option value="Bowles Hall, Berkeley, Berkeley, CA">Bowles Hall</option>
+                <option value="Clark Kerr Campus, Berkeley, Berkeley, CA">Clark Kerr Campus</option>
+                <option value="Cleary Hall, Berkeley, CA">Cleary Hall</option>
+                <option value="Foothill Student Housing: Hearst Avenue Side, Berkeley, CA">Foothill Residence Halls</option>
+                <option value="Ida Louise Jackson Graduate House, Berkeley, CA">Ida Lousie Jackson Graduate House</option>
                 <option value="International House, UC Berkeley, Piedmont Avenue, Berkeley, CA">International House</option>
-                <option value="Martinez Commons, Berkeley">Martinez Commons</option>
+                <option value="Martinez Commons, Berkeley, CA">Martinez Commons</option>
                 <option value="Stern Hall, Berkeley">Stern Hall</option>
                 <option value="Unit 1, Berkeley">Unit 1</option>
                 <option value="Unit 2, Berkeley">Unit 2</option>
@@ -459,31 +448,30 @@
                 <option value="University House, University of California, Berkeley">University House</option>
                 <option value></option>
                 <option value>-------Recreational Facility-------</option>
-                <option value="Berkeley Art Museum">Berkeley Art Museum</option>
-                <option value="Botanical Garden Berkeley">Botanical Garden</option>
-                <option value="Sather Tower Berkeley">Campanile (Sather Tower)</option>
+                <option value="Berkeley Art Museum, Berkeley, CA">Berkeley Art Museum</option>
+                <option value="Botanical Garden Berkeley, Berkeley, CA">Botanical Garden</option>
+                <option value="Sather Tower Berkeley, Berkeley, CA">Campanile (Sather Tower)</option>
                 <option value="Durham Studio Theater, Berkeley">Durham Studio Theatre</option>
-                <option value="Recreational Sports Facility">Golden Bear Recreation Center</option>
-                <option value="Hearst Greek Theatre">Hearst Greek Theatre</option>
-                <option value="Kleeberger Field House">Kleeberger Field House</option>
-                <option value="Martin Luther King Student Union, Berkeley">Martin Luther King Student Union</option>
-                <option value="Old Art Gallery, Berkeley">Old Art Gallery</option>
-                <option value="Pacific Film Archive">Pacific Film Archieve Theatre</option>
-                <option value="Recreational Sports Facility">Recreational Sports Facility</option>
-                <option value="Strawberry Canyon Recreational Area">Strawberry Canyon Recreational Area</option>
-                <option value="Zellerbach Hall, Berkeley">Zellerbach Playhouse</option>
+                <option value="Recreational Sports Facility, Berkeley, CA">Golden Bear Recreation Center</option>
+                <option value="Hearst Greek Theatre, Berkeley, CA">Hearst Greek Theatre</option>
+                <option value="Kleeberger Field House, Berkeley, CA">Kleeberger Field House</option>
+                <option value="Martin Luther King Student Union, Berkeley, CA">Martin Luther King Student Union</option>
+                <option value="Old Art Gallery, Berkeley, CA">Old Art Gallery</option>
+                <option value="Pacific Film Archive, Berkeley, CA">Pacific Film Archieve Theatre</option>
+                <option value="Recreational Sports Facility, Berkeley, CA">Recreational Sports Facility</option>
+                <option value="Strawberry Canyon Recreational Area, Berkeley, CA">Strawberry Canyon Recreational Area</option>
+                <option value="Zellerbach Hall, Berkeley, CA">Zellerbach Playhouse</option>
                 <option value></option>
                 <option value>-------Sports Facility/Stadium-------</object>
-                <option value="California Memorial Stadium Berkeley">California Memorial Stadium</option>
+                <option value="California Memorial Stadium Berkeley, Berkeley, CA">California Memorial Stadium</option>
                 <option value="Edwards Stadium, Fulton Street, Berkeley, CA">Edward Stadium</option>
-                <option value="Hass Pavilion, Berkeley">Hass Pavilion</option>
-                <option value="Hearst Field Annex">Hearst Field Annex</option>
-                <option value="Hearst Memorial Gymnasium">Hearst Memorial Gymnasium</option>
-                <option value="Hellman Tennis Center">Hellman Tennis Center</option>
-                <option value="Levine-Fricke Softball Field, Berkeley">Levine-Fricke Field</option>
-                <option value="Maxwell Family Field">Maxwell Family Field</option>
-                <option value="Recreational Sports Facility">Spieker Aquatics Center</option>
-                <option value="Underhill Parking and Field">Underhill Playing Field</option>
+                <option value="Hass Pavilion, Berkeley, CA">Hass Pavilion</option>
+                <option value="Hearst Field Annex, Berkeley, CA">Hearst Field Annex</option>
+                <option value="Hearst Memorial Gymnasium, Berkeley, CA">Hearst Memorial Gymnasium</option>
+                <option value="Hellman Tennis Center, Berkeley, CA">Hellman Tennis Center</option>
+                <option value="Maxwell Family Field, Berkeley, CA">Maxwell Family Field</option>
+                <option value="Recreational Sports Facility, Berkeley, CA">Spieker Aquatics Center</option>
+                <option value="Underhill Parking and Field, Berkeley, CA">Underhill Playing Field</option>
                 <option value="Witter Field, 210 Stadium Rim Way, Berkeley">Witter Field</option>
             </select>
         </div>
