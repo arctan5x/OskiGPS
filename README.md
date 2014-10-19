@@ -18,5 +18,3 @@ Technology used:
 - Google Map API
 - Speech Recognition API
 - Speech Synthesis API
-
-Thank you. 
