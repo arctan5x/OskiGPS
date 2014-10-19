@@ -1,5 +1,7 @@
 OSKI MAP for CS61A Hackathon
 
+URL = http://arctan5x.github.io/OskiGPS/
+
 *** This app only supports Google Chrome
 *** While using the app, slow internet connects might inturrupt the script and stop the program. Simply refresh it when problem occurs. 
 
