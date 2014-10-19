@@ -19,24 +19,18 @@ p {
 	text-align: center;	
 }
 
-#start_button {
-	background-color:white;
-	border: 0;
-    padding: 0;
-}
-
 #map-canvas {
 	width: 80%;
-	height: 75%;
+	height: 70%;
  	padding-top: 5px;
-	margin-top: 9%;
+	margin-top: 6%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #location_menu {
     position: absolute;
-    margin-top: 6%;
+    margin-top: 3%;
     margin-left: 27%;
     margin-right: auto;
     z-index: 3;
@@ -45,6 +39,28 @@ p {
     border: 1px solid #999;
 }
 
+.footer {
+	position:absolute;
+	bottom:0;
+	overflow:hidden;
+	background-color:#003262;
+	padding:0;
+	width:100%
+}
+
+.footerbody {
+	float:left;
+	padding-left:15px;
+	color: white;
+	font-size: 12px;
+}
+
+#button {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 4%;
+}
 
 @media only screen and (max-device-width: 480px) {
 	html, body {
@@ -77,6 +93,13 @@ p {
 	    border: 1px solid #999;
 	}
 
+	.footer {
+		position:absolute;
+		bottom:0;
+		overflow:hidden;
+		background-color:#003262;
+		padding:0;
+		width:100%
 }
 
 }
